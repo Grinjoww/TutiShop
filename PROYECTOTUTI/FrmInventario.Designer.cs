@@ -56,6 +56,7 @@
             this.picOpcion = new System.Windows.Forms.PictureBox();
             this.picAgregarSucursal = new System.Windows.Forms.PictureBox();
             this.picdelete = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvContrInventario)).BeginInit();
             this.tlsControlInven.SuspendLayout();
             this.grbxfiltrar.SuspendLayout();
@@ -128,7 +129,7 @@
             this.toolStripSeparator3});
             this.tlsControlInven.Location = new System.Drawing.Point(0, 0);
             this.tlsControlInven.Name = "tlsControlInven";
-            this.tlsControlInven.Size = new System.Drawing.Size(800, 27);
+            this.tlsControlInven.Size = new System.Drawing.Size(800, 31);
             this.tlsControlInven.TabIndex = 19;
             this.tlsControlInven.Text = "toolStrip1";
             // 
@@ -137,7 +138,7 @@
             this.tlsbtnRegistrar.Image = ((System.Drawing.Image)(resources.GetObject("tlsbtnRegistrar.Image")));
             this.tlsbtnRegistrar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tlsbtnRegistrar.Name = "tlsbtnRegistrar";
-            this.tlsbtnRegistrar.Size = new System.Drawing.Size(92, 24);
+            this.tlsbtnRegistrar.Size = new System.Drawing.Size(92, 28);
             this.tlsbtnRegistrar.Text = "Registrar";
             this.tlsbtnRegistrar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.tlsbtnRegistrar.Click += new System.EventHandler(this.tlsbtnRegistrar_Click_1);
@@ -145,14 +146,14 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // tlsbtnEditar
             // 
             this.tlsbtnEditar.Image = ((System.Drawing.Image)(resources.GetObject("tlsbtnEditar.Image")));
             this.tlsbtnEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tlsbtnEditar.Name = "tlsbtnEditar";
-            this.tlsbtnEditar.Size = new System.Drawing.Size(72, 24);
+            this.tlsbtnEditar.Size = new System.Drawing.Size(72, 28);
             this.tlsbtnEditar.Text = "Editar";
             this.tlsbtnEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.tlsbtnEditar.Click += new System.EventHandler(this.tlsbtnEditar_Click);
@@ -160,14 +161,14 @@
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
             // tlsbtnEliminar
             // 
             this.tlsbtnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("tlsbtnEliminar.Image")));
             this.tlsbtnEliminar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tlsbtnEliminar.Name = "tlsbtnEliminar";
-            this.tlsbtnEliminar.Size = new System.Drawing.Size(87, 24);
+            this.tlsbtnEliminar.Size = new System.Drawing.Size(87, 28);
             this.tlsbtnEliminar.Text = "Eliminar";
             this.tlsbtnEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.tlsbtnEliminar.Click += new System.EventHandler(this.tlsbtnEliminar_Click);
@@ -175,7 +176,7 @@
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 31);
             // 
             // lblControlInven
             // 
@@ -374,6 +375,17 @@
             this.picdelete.TabStop = false;
             this.picdelete.Click += new System.EventHandler(this.picdelete_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(262, 93);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(195, 23);
+            this.label2.TabIndex = 35;
+            this.label2.Text = "Seleccione una sucursal";
+            // 
             // FrmInventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -382,6 +394,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(73)))), ((int)(((byte)(105)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.picdelete);
             this.Controls.Add(this.picAgregarSucursal);
             this.Controls.Add(this.grbxfiltrar);
@@ -443,5 +456,6 @@
         private System.Windows.Forms.Button btnaceptarfiltro;
         private System.Windows.Forms.PictureBox picAgregarSucursal;
         private System.Windows.Forms.PictureBox picdelete;
+        private System.Windows.Forms.Label label2;
     }
 }
