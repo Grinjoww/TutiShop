@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInfoProducto));
             this.cmbxMarca = new System.Windows.Forms.ComboBox();
             this.cmbxColor = new System.Windows.Forms.ComboBox();
-            this.cmbxTalla = new System.Windows.Forms.ComboBox();
             this.lblMarca = new System.Windows.Forms.Label();
             this.lblColor = new System.Windows.Forms.Label();
             this.lblTalla = new System.Windows.Forms.Label();
@@ -51,6 +50,11 @@
             this.lblSubcategoria = new System.Windows.Forms.Label();
             this.lblDescuento = new System.Windows.Forms.Label();
             this.txtbxDescuento = new System.Windows.Forms.TextBox();
+            this.cmbxTalla = new System.Windows.Forms.ComboBox();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.picImagen)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,24 +102,6 @@
             this.cmbxColor.Size = new System.Drawing.Size(143, 31);
             this.cmbxColor.Sorted = true;
             this.cmbxColor.TabIndex = 41;
-            // 
-            // cmbxTalla
-            // 
-            this.cmbxTalla.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbxTalla.FormattingEnabled = true;
-            this.cmbxTalla.Items.AddRange(new object[] {
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL",
-            "XXL",
-            "XXXL",
-            ""});
-            this.cmbxTalla.Location = new System.Drawing.Point(375, 165);
-            this.cmbxTalla.Name = "cmbxTalla";
-            this.cmbxTalla.Size = new System.Drawing.Size(143, 31);
-            this.cmbxTalla.TabIndex = 40;
             // 
             // lblMarca
             // 
@@ -337,12 +323,79 @@
             this.txtbxDescuento.Size = new System.Drawing.Size(143, 30);
             this.txtbxDescuento.TabIndex = 64;
             // 
+            // cmbxTalla
+            // 
+            this.cmbxTalla.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbxTalla.FormattingEnabled = true;
+            this.cmbxTalla.Items.AddRange(new object[] {
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL",
+            "XXXL",
+            ""});
+            this.cmbxTalla.Location = new System.Drawing.Point(199, 564);
+            this.cmbxTalla.Name = "cmbxTalla";
+            this.cmbxTalla.Size = new System.Drawing.Size(143, 31);
+            this.cmbxTalla.TabIndex = 40;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Location = new System.Drawing.Point(497, 170);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(43, 20);
+            this.radioButton4.TabIndex = 72;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "XL";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(456, 170);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(35, 20);
+            this.radioButton3.TabIndex = 71;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "L";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(411, 170);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(39, 20);
+            this.radioButton2.TabIndex = 70;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "M";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(368, 170);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(37, 20);
+            this.radioButton1.TabIndex = 69;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "S";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
             // FrmInfoProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(243)))), ((int)(((byte)(251)))));
-            this.ClientSize = new System.Drawing.Size(561, 529);
+            this.ClientSize = new System.Drawing.Size(561, 607);
+            this.Controls.Add(this.radioButton4);
+            this.Controls.Add(this.radioButton3);
+            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.lblDescuento);
             this.Controls.Add(this.txtbxDescuento);
             this.Controls.Add(this.cmbSubCategoria);
@@ -378,7 +431,6 @@
 
         public System.Windows.Forms.ComboBox cmbxMarca;
         public System.Windows.Forms.ComboBox cmbxColor;
-        public System.Windows.Forms.ComboBox cmbxTalla;
         private System.Windows.Forms.Label lblMarca;
         private System.Windows.Forms.Label lblColor;
         private System.Windows.Forms.Label lblTalla;
@@ -398,5 +450,10 @@
         private System.Windows.Forms.Label lblSubcategoria;
         private System.Windows.Forms.Label lblDescuento;
         public System.Windows.Forms.TextBox txtbxDescuento;
+        public System.Windows.Forms.ComboBox cmbxTalla;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }
