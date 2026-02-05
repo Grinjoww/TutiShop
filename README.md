@@ -31,7 +31,5 @@ Gestión de Inventario: Registro detallado de prendas (categoría, estado, preci
 -Clonar el repositorio: git clone https://github.com/tu-usuario/TutiShop.git
 -Configurar la base de datos en SQL Server utilizando los scripts adjuntos en la carpeta /Database.
 -Abrir la solución en Visual Studio.
-
-Ajustar el Connection String en el archivo de configuración.
-
-Ejecutar el proyecto.
+-Ajustar el Connection String en el archivo de configuración.
+-Ejecutar el proyecto.
