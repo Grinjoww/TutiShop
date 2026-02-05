@@ -30,6 +30,6 @@ Utilizamos la metodología ágil **SCRUM**, organizada en sprints de una a dos s
 
 ## ⚙️ Instalación y Configuración
 1. **Clonar el repositorio:** ```bash
-   git clone [https://github.com/tu-usuario/TutiShop.git](https://github.com/tu-usuario/TutiShop.git)
+   git clone [https://github.com/tu-usuario/TutiShop.git](https://github.com/Grinjoww/TutiShop.git)
 2. **Configurar la base de datos:** Usar los scripts en /Database dentro de SQL Server.
 3. **Ejecutar:** Abrir en Visual Studio, ajustar el Connection String y dar a iniciar.
